@@ -1,5 +1,53 @@
 #include<iostream>
 using namespace std; 
+bool IsTheMoveValid(int array[9][9], int rows, int columns, int input){
+    //Checking each row by iterating through its columns
+    bool IsInThisRow[10]={false};
+    for(int column=0; column<9; column++){
+        int CurrentCellValue = array[rows][columns];
+        //value is only needed inside the loop for the current cell.
+        if(CurrentCellValue!=0){
+            IsInThisRow[CurrentCellValue];
+            return false;
+        }
+        else{
+             IsInThisRow[CurrentCellValue]=true;
+        }
+    }
+
+    //Checking each column by iterating through its rows
+
+    bool IsInThisColumn[10]={false};
+    for(int rows=0; rows<9; rows++){
+        int CurrentCellValue=array[rows][columns];
+        if(CurrentCellValue!=0){
+            IsInThisColumn[CurrentCellValue];
+            return false;
+        }
+        else{
+            IsInThisColumn[CurrentCellValue]=true;
+        }
+    }
+
+    //Checking for each grid (3x3)
+
+    bool IsInThisGrid[10]={false};
+    int StartingRowOfBox= (rows/3)*3;
+    int StartingColOfBox = (columns/3)*3;
+
+    for(int rows=0; rows<StartingRowOfBox+3; rows++){
+        for(int columns=0; columns<StartingColOfBox+3; columns++){
+            int CurrentCellValue=array[rows][columns];
+            if(CurrentCellValue!=0){
+                IsInThisGrid[CurrentCellValue];
+                return false;
+            }
+            else{
+                IsInThisGrid[CurrentCellValue]=true;
+            }
+        }
+    }
+}
 int main(){
     int size=9;
     int array[size][size]={
