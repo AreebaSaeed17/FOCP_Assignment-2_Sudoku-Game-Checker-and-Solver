@@ -1,5 +1,5 @@
 # FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver
-Explaining my function "IsValidMove" to check validity of the user choice in the sudoku board. It has 3 check points which completely verify if the number the user wants to input is a valid move for the location on the board that he chose.  
+Explaining my function "IsTheMoveValid" to check validity of the user choice in the sudoku board. It has 3 check points which completely verify if the number the user wants to input is a valid move for the location on the board that he chose.  
 This works on the logic of nested loops, 2D arrays and Boolean.  
 At the start of each segment of the checks, I have created an array of 10 elements (0-9) stored as false.  
 It first enters each row using an outer loop, inside each row it checks all of its columns    
