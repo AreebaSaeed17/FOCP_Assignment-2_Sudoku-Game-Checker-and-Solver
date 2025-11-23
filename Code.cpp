@@ -37,10 +37,8 @@ bool IsTheMoveValid(int array[9][9], int rows, int columns, int input){
             return false;
         }
          //update this number's status in the boolean array as true
-        IsInThisRow[CurrentCellValue]=true;
-    
-    }
-       
+        IsInThisRow[CurrentCellValue]=true;    
+        }
     }
 
     //Checking each column by iterating through its rows
@@ -131,7 +129,7 @@ int main(){
     else{
         cout << "Invalid input! Please enter numbers ranging from 1 to 9.\n";
     continue;   
-}
-    return 0;
-}
+        }
+    }
+     return 0;
 }
