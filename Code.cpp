@@ -22,7 +22,7 @@ void printBoard(int board[9][9], int size) {
 
         // Print each row
         for (int j = 0; j < size; j++) {
-            if (j % boxSize == 0) cout << " |";
+            if (j % boxSize == 0) cout << "|";
             if (board[i][j] == 0)
                 cout << " "; // empty cell as dot
             else
