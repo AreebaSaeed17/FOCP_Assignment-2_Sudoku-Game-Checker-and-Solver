@@ -14,7 +14,7 @@ void printBoard(int board[9][9], int size) {
         if (i % boxSize == 0) {
             cout << "+";
             for (int k = 0; k < size; k++) {
-                cout << "-" << "-"; // two dashes per cell for spacing
+                cout << "---"; // three dashes for better alignment
                 if ((k + 1) % boxSize == 0) cout << "+";
             }
             cout << "\n";
@@ -24,9 +24,9 @@ void printBoard(int board[9][9], int size) {
         for (int j = 0; j < size; j++) {
             if (j % boxSize == 0) cout << "|";
             if (board[i][j] == 0)
-                cout << " "; // empty cell as dot
+                cout << "   "; // empty cell: 3 spaces
             else
-                cout << " " << board[i][j];
+                cout << " " << board[i][j] << " "; // number centered
         }
         cout << "|\n";
     }
@@ -34,12 +34,11 @@ void printBoard(int board[9][9], int size) {
     // Print bottom border
     cout << "+";
     for (int k = 0; k < size; k++) {
-        cout << "-" << "-";
+        cout << "---";
         if ((k + 1) % boxSize == 0) cout << "+";
     }
     cout << "\n";
 }
-
 
 
 //FUNCTION-1
