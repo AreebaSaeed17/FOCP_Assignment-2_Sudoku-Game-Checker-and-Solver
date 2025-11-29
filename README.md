@@ -1,4 +1,16 @@
 # FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver
+# TITLE AND TEAM INFORMATION 
+# TITLE : SUDOKU GAME CHECKER AND SOLVER
+# TEAM NAME : GAME DEV ENGINEERS 🕹️✨
+# TEAM MEMBERS AND ROLES:
+1. Areeba Saeed : Team Leader & Programmer 1       
+2. Urooj Fatima : Programmer 2 & Logic Designer 
+3. Heeba Aamir : Git Manager & Tester
+# Overview / Program Description:
+We have created a C++-based Sudoku Game, Checker, and Solver that lets players interactively complete a Sudoku puzzle. It uses 2D arrays, modular functions, and strict validation to enforce real Sudoku rules. Players can enter numbers, choose the size of the grid, check validity, request hints, or auto-solve the puzzle. A scoring system rewards correct moves and deducts points for mistakes or help, and the game ends by displaying the final score once the board is fully solved.   
+# Why It's Useful:
+This project is useful because it involves the application of core programming concepts—such as arrays, recursion, input validation, and modular design—to a real-world puzzle. It helps in logic building and implementation of logic. Features like the checker, hint system, and scoring mechanism also mimic real puzzle applications, making the game both educational and practical. The scoring system encourages efficient play, while the modular structure reinforces clean problem-solving and debugging skills. Overall, the project offers both an enjoyable puzzle game and a solid learning opportunity for understanding how structured logic can be transformed into a functional program.   
+
 Explaining my function "IsTheMoveValid" to check validity of the user choice in the sudoku board. It has 3 check points which completely verify if the number the user wants to input is a valid move for the location on the board that he chose.  
 This works on the logic of nested loops, 2D arrays and Boolean.  
 At the start of each segment of the checks, I have created an array of 10 elements (0-9) stored as false.  
