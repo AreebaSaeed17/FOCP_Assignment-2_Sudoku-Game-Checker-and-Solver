@@ -1,4 +1,4 @@
-// This is the code for A Sudoku Game using concepts of 2D Arrays, loops, functions and recursion
+// This is the code for Sudoku Game using concepts of 2D Arrays, loops, functions and recursion
 #include<iostream>
 #include<ctime>
 #include<cstdlib>
@@ -470,7 +470,7 @@ int main() {
 
         // Check losing conditions
         if (mistakes > maxMistakes || score <= 0) {
-            setColor(15);
+            setColor(4);
             cout << "Game Over! You lost.\n";
             setColor(7);
             gameOver = true;
@@ -479,4 +479,5 @@ int main() {
     }       //this brace ends the while loop of game
     return 0;
 }            //this brace ends the main 
+
 
