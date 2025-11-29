@@ -222,7 +222,9 @@ void hint(int arr[9][9], int size) {
         if(solver(temp,size)){
             int num=temp[row][col];
             setColor(7);
+            delay(1);
             cout << num << " will be at row # " << row + 1 << " at column # " << col + 1 << endl;
+            delay(1);
             arr[row][col] = num;
             return;
             }
@@ -315,7 +317,7 @@ int main() {
    setColor(3);
     cout << "___________________________________________Rules___________________________________________\n";
     setColor(7);
-    setColor(6);
+    setColor(5);
     cout << "--> Enter row, column, and value (1-9).\n";
     cout << "--> You have to fill appropriate numbers in the empty cells.\n";
     cout << "--> A number you choose for a cell must be unique in that row,column as well as the subgrid.\n";
@@ -378,6 +380,11 @@ int main() {
             if (row >= 1 && row <= size && column >= 1 && column <= size && value >= 1 && value <= size) {
                 if (IsTheMoveValid(array, row - 1, column - 1, value, size)) {
                     array[row - 1][column - 1] = value;
+                    
+                    setColor(2);
+                    cout << "Move accepted!\n";
+                    setColor(7);
+
                     printBoard(array, size);
                 }
                 else {
@@ -479,5 +486,6 @@ int main() {
     }       //this brace ends the while loop of game
     return 0;
 }            //this brace ends the main 
+
 
 
