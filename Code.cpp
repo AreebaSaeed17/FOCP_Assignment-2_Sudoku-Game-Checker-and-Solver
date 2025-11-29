@@ -380,11 +380,6 @@ int main() {
             if (row >= 1 && row <= size && column >= 1 && column <= size && value >= 1 && value <= size) {
                 if (IsTheMoveValid(array, row - 1, column - 1, value, size)) {
                     array[row - 1][column - 1] = value;
-                    
-                    setColor(2);
-                    cout << "Move accepted!\n";
-                    setColor(7);
-
                     printBoard(array, size);
                 }
                 else {
@@ -486,6 +481,7 @@ int main() {
     }       //this brace ends the while loop of game
     return 0;
 }            //this brace ends the main 
+
 
 
 
