@@ -82,8 +82,9 @@ Quit: Exit game.
 8. Game ends when user complete the games, quits or loses. Then the final message is displayed.
 # Execution Instructions :
 ## ON A COMPILER:
-Compile the program on c++ compatible compiler and then run it.
-Sample Output:
+Compile the program on c++ compatible compiler and then run it.  
+Sample Output:   
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/ef29b71e668a6dc0044e3883bcf9fdc791e6251e/outputs/1.png)
 ## ON GitBash:
 
 # AI Tool Reflection:
