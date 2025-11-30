@@ -84,7 +84,10 @@ Quit: Exit game.
 ## ON A COMPILER:
 Compile the program on c++ compatible compiler and then run it.  
 Sample Output:   
-![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/ef29b71e668a6dc0044e3883bcf9fdc791e6251e/outputs/1.png)
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/ef29b71e668a6dc0044e3883bcf9fdc791e6251e/outputs/1.png)  
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/f2d5a38099a495999f90138ba9fba90f76c24630/outputs/2.png)   
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/f2d5a38099a495999f90138ba9fba90f76c24630/outputs/3.png)  
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/f2d5a38099a495999f90138ba9fba90f76c24630/outputs/4.png)  
 ## ON GitBash:
 
 # AI Tool Reflection:
