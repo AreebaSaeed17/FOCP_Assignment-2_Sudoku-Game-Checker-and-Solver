@@ -56,5 +56,39 @@ After the solver function provides the number at that place, we assign it to tha
 8. Game_Menu(): The Game_Menu function displays a menu of available player actions, including making a move, getting a hint, requesting the complete solution, checking the board, or quitting the game. To enhance readability, the menu incorporates color formatting, making it easier for players to navigate and select their desired action.
 9. delay(): It pauses program execution for a given number of seconds using sleep_for(), used for creating loading screens and giving players time to read messages.
 10. setColor():Uses Windows API (SetConsoleTextAttribute) to apply color to terminal text, improving readability and user experience.
+# Logic Flow:
+1. display of welcome message and rules. User selects grid size and difficulty.
+2. generateBoard() creates a complete valid board.
+3. removeCells() removes values based on difficulty.
+4. printBoard() displays the playable puzzle.
+5. Initialize Game State : Score = 100, Mistakes = 0 (max 5), gameOver = false.
+6. Gameplay Loop : Display menu and take user choice:
+Make Move: Validate using IsTheMoveValid(); update board or deduct points.
+Hint: hint() reveals a correct value and reduces score.
+Full Solution: solver() solves the board and ends the game.
+Check Board: checker() verifies correctness.
+Quit: Exit game.
+7. After each action, updated score and mistakes are displayed. If score ≤ 0 or mistakes > 5 → game ends.
+8. Game ends when user complete the games, quits or loses. Then the final message is displayed.
+# Execution Instructions :
+## ON A COMPILER:
+Compile the program on c++ compatible compiler and then run it.
+Sample Output:
+## ON GitBash:
+
+# AI Tool Reflection:
+AI tools were used selectively to assist with specific technical parts of the project, while the main logic, implementation, and program design were developed by the group. The following summarizes where AI assistance was applied:   
+1. AI assistance was used to implement the setColor() function correctly using the Windows console API (GetStdHandle and SetConsoleTextAttribute). AI helped provide the proper syntax and structure, while the choice of colors and integration into the game (menus, warnings, success messages, etc.) was implemented by the group.
+2. AI guidance was used to write a clean and portable version of the delay() function using std::this_thread::sleep_for() and std::chrono::seconds. This allowed the game to include smooth pauses for loading screens and improved user experience. The placement of delays within the game flow was done by the group.
+3. Initially to make the solver function , the approach of our team was to reset only the cells changed in the solver when a dead end was reached and then try again with different numbers starting again from the first empty cell. When this method failed to produce a consistent solution, AI assistance helped identify the problem that suggested a more reliable strategy to validate the solvability of the board immediately after placing a number in the first empty cell and allow recursive backtracking to handle resets automatically. This advice improved the correctness and stability of the solver, while the full implementation and integration into the game were completed by the group.
+# Future Enhancements: 
+## Graphical User Interface (GUI) :
+Implementing a GUI using frameworks like Qt, SFML, or SDL would create a more interactive and visually appealing experience compared to the console-based interface.
+## Database Integration:
+Integrate a database (e.g., SQLite or MySQL) to store player profiles, previous scores, leaderboards, puzzle completion history, etc. This would make the game more persistent and player-focused.
+## Timer Based Scoring :
+Introduce a countdown or stopwatch system to incorporate time-based scoring and reward faster puzzle completion.
+## Save & Reload:
+Allow players to save the current board state to a file and reload it later to continue their progress.
 
 
