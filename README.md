@@ -83,13 +83,24 @@ Quit: Exit game.
 # Execution Instructions :
 ## ON A COMPILER:
 Compile the program on c++ compatible compiler and then run it.  
-Sample Output:   
+### Sample Output:   
 ![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/ef29b71e668a6dc0044e3883bcf9fdc791e6251e/outputs/1.png)  
 ![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/f2d5a38099a495999f90138ba9fba90f76c24630/outputs/2.png)   
 ![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/f2d5a38099a495999f90138ba9fba90f76c24630/outputs/3.png)  
 ![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/f2d5a38099a495999f90138ba9fba90f76c24630/outputs/4.png)  
 ## ON GitBash:
-
+On Git Bash :   
+Open a terminal in the folder containing the program file.       
+Compile the program using:       
+g++ -o sudoku_game "Sudoku.cpp"            
+Run the program:        
+sudoku_game.exe   
+### INPUT:
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/a9949388f13fb4b319693fbaf736086ac9d20939/outputs/5.png) 
+### OUTPUT:
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/a9949388f13fb4b319693fbaf736086ac9d20939/outputs/6.png) 
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/a9949388f13fb4b319693fbaf736086ac9d20939/outputs/7.png) 
+![Input_Screenshot](https://github.com/AreebaSaeed17/FOCP_Assignment-2_Sudoku-Game-Checker-and-Solver/blob/a9949388f13fb4b319693fbaf736086ac9d20939/outputs/8.png) 
 # AI Tool Reflection:
 AI tools were used selectively to assist with specific technical parts of the project, while the main logic, implementation, and program design were developed by the group. The following summarizes where AI assistance was applied:   
 1. AI assistance was used to implement the setColor() function correctly using the Windows console API (GetStdHandle and SetConsoleTextAttribute). AI helped provide the proper syntax and structure, while the choice of colors and integration into the game (menus, warnings, success messages, etc.) was implemented by the group.
